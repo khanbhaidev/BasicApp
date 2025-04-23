@@ -26,14 +26,14 @@ jobs:
     - name: Set up Android SDK
       uses: android-actions/setup-android@v2
       with:
-        api-level: 33
-        build-tools: 33.0.2
+        api-level: '33'
+        build-tools: '33.0.2'
         ndk: false
 
     - name: Build APK
       run: ./gradlew assembleDebug
 
-      - name: Upload APK
+    - name: Upload APK
       uses: actions/upload-artifact@v3
       with:
         name: app-debug.apk
