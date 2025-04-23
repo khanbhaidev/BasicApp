@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout your repository code
-    - name: Check out code
+    # Step 1: Check out the repository code
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     # Step 2: Set up JDK 11
